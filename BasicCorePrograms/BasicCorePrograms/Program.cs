@@ -13,7 +13,7 @@ namespace BasicCorePrograms
             
 
             Console.WriteLine("Please Enter :  1 --> Flip Coin   2  --> Leap Year   3  -->  Powers Of Two   4  -->  Harmonic Number \n  " +
-                "5  -->  Prime Factors   6  -->  QuotientAndRemainder");
+                "5  -->  Prime Factors   6  -->  QuotientAndRemainder   7  -->  SwapingTwoNumbers");
             int num = int.Parse(Console.ReadLine());
             switch (num)
             {
@@ -40,6 +40,10 @@ namespace BasicCorePrograms
                 case 6: DivisionProperties dp = new DivisionProperties();
                         dp.QuotientRemainder();
                         Console.ReadLine();
+                    break;
+                case 7: SwapTwoNumbers swt = new SwapTwoNumbers();
+                         swt.Swaping();
+                         Console.ReadLine();
                     break;
 
                 default: 
