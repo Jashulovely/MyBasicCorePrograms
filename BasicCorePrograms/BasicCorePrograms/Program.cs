@@ -12,7 +12,8 @@ namespace BasicCorePrograms
         {
             
 
-            Console.WriteLine("Please Enter :  1 --> Flip Coin   2  --> Leap Year   3  -->  Powers Of Two   4  -->  Harmonic Number \n  5  -->  Prime Factors");
+            Console.WriteLine("Please Enter :  1 --> Flip Coin   2  --> Leap Year   3  -->  Powers Of Two   4  -->  Harmonic Number \n  " +
+                "5  -->  Prime Factors   6  -->  QuotientAndRemainder");
             int num = int.Parse(Console.ReadLine());
             switch (num)
             {
@@ -34,6 +35,10 @@ namespace BasicCorePrograms
                     break;
                 case 5: ReturnPrimeFactors rpf = new ReturnPrimeFactors();
                         rpf.PrimeFactors();
+                        Console.ReadLine();
+                    break;
+                case 6: DivisionProperties dp = new DivisionProperties();
+                        dp.QuotientRemainder();
                         Console.ReadLine();
                     break;
 
