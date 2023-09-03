@@ -12,7 +12,7 @@ namespace BasicCorePrograms
         {
             
 
-            Console.WriteLine("Please Enter :  1 --> Flip Coin   2  --> Leap Year");
+            Console.WriteLine("Please Enter :  1 --> Flip Coin   2  --> Leap Year   3  -->  PowersOfTwo");
             int num = int.Parse(Console.ReadLine());
             switch (num)
             {
@@ -24,9 +24,15 @@ namespace BasicCorePrograms
                         lp.IsLeapYear();
                         Console.ReadLine();
                     break;
+                case 3: PowerOfTwo pot = new PowerOfTwo();
+                        pot.TwoPowers();
+                        Console.ReadLine();
+                    break;
+
 
                 default: 
                         Console.WriteLine("Please Enter a Valid Number.");
+                        Console.ReadLine();
                     break;
             }
         }
