@@ -12,7 +12,7 @@ namespace BasicCorePrograms
         {
             
 
-            Console.WriteLine("Please Enter :  1 --> Flip Coin   2  --> Leap Year   3  -->  PowersOfTwo");
+            Console.WriteLine("Please Enter :  1 --> Flip Coin   2  --> Leap Year   3  -->  Powers Of Two   4  -->  Harmonic Number \n  5  -->  Prime Factors");
             int num = int.Parse(Console.ReadLine());
             switch (num)
             {
@@ -28,7 +28,14 @@ namespace BasicCorePrograms
                         pot.TwoPowers();
                         Console.ReadLine();
                     break;
-
+                case 4: HarmonicNumber hn = new HarmonicNumber();
+                        hn.Harmonic();
+                        Console.ReadLine();
+                    break;
+                case 5: ReturnPrimeFactors rpf = new ReturnPrimeFactors();
+                        rpf.PrimeFactors();
+                        Console.ReadLine();
+                    break;
 
                 default: 
                         Console.WriteLine("Please Enter a Valid Number.");
