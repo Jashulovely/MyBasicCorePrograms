@@ -13,7 +13,7 @@ namespace BasicCorePrograms
             
 
             Console.WriteLine("Please Enter :  1 --> Flip Coin   2  --> Leap Year   3  -->  Powers Of Two   4  -->  Harmonic Number \n  " +
-                "5  -->  Prime Factors   6  -->  QuotientAndRemainder   7  -->  SwapingTwoNumbers");
+                "5  -->  Prime Factors   6  -->  QuotientAndRemainder   7  -->  SwapingTwoNumbers   8   -->  EvenOrOdd");
             int num = int.Parse(Console.ReadLine());
             switch (num)
             {
@@ -44,6 +44,10 @@ namespace BasicCorePrograms
                 case 7: SwapTwoNumbers swt = new SwapTwoNumbers();
                          swt.Swaping();
                          Console.ReadLine();
+                    break;
+                case 8: EvenOrOdd eo = new EvenOrOdd();
+                        eo.Check();
+                        Console.ReadLine();
                     break;
 
                 default: 
