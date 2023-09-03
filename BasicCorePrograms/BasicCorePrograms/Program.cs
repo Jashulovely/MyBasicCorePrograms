@@ -14,7 +14,7 @@ namespace BasicCorePrograms
 
             Console.WriteLine("Please Enter :  1 --> Flip Coin   2  --> Leap Year   3  -->  Powers Of Two   4  -->  Harmonic Number \n  " +
                 "5  -->  Prime Factors   6  -->  Quotient And Remainder   7  -->  Swaping Two Numbers   8   -->  Even Or Odd   9  -->  Vowel Or Not" +
-                "10  -->  Largest Number");
+                "10  -->  Largest Number   11  -->  Harmonic Series");
             int num = int.Parse(Console.ReadLine());
             switch (num)
             {
@@ -56,6 +56,10 @@ namespace BasicCorePrograms
                     break;
                 case 10: LargestInThreeNumbers lar = new LargestInThreeNumbers();
                          lar.LargestNumber();
+                         Console.ReadLine();
+                    break;
+                case 11: HarmonicSeries hs = new HarmonicSeries();
+                         hs.Harmonic();
                          Console.ReadLine();
                     break;
 
